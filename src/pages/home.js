@@ -1,4 +1,5 @@
-import "../src/style.css";
+import "../styles/style.css";
+import logo from "../assets/imgs/logo.png";
 
 const render = () => {
   const container = document.getElementById("content");
@@ -6,10 +7,15 @@ const render = () => {
   header.classList.add("header");
   container.appendChild(header);
 
-  const title = document.createElement("h1");
-  title.classList.add("title");
-  title.textContent = "Food Spot";
-  header.appendChild(title);
+  const myLogo = new Image();
+  myLogo.classList.add("logo");
+  myLogo.src = logo;
+  header.appendChild(myLogo);
+
+  // const title = document.createElement("h1");
+  // title.classList.add("title");
+  // title.textContent = "Food Spot";
+  // header.appendChild(title);
 
   const nav = document.createElement("ul");
   const l1 = document.createElement("li");

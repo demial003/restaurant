@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
 ul,
 h1 {
   margin: 0;
