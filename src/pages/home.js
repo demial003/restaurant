@@ -1,5 +1,5 @@
 import "../styles/style.css";
-import logo from "../assets/imgs/logo.png";
+import logo from "../assets/imgs/logo.PNG";
 
 const render = () => {
   const container = document.getElementById("content");
@@ -12,32 +12,34 @@ const render = () => {
   myLogo.src = logo;
   header.appendChild(myLogo);
 
-  // const title = document.createElement("h1");
-  // title.classList.add("title");
-  // title.textContent = "Food Spot";
-  // header.appendChild(title);
-
-  const nav = document.createElement("ul");
-  const l1 = document.createElement("li");
-  const l2 = document.createElement("li");
-  const l3 = document.createElement("li");
+  const nav = document.createElement("div");
   nav.classList.add("nav");
-  nav.appendChild(l1);
-  nav.appendChild(l2);
-  nav.appendChild(l3);
-  const home = document.createElement("a");
+
+  const home = document.createElement("button");
   home.textContent = "home";
-  home.href = "#content";
-  l1.appendChild(home);
-  const menu = document.createElement("a");
+
+  const menu = document.createElement("button");
   menu.textContent = "menu";
-  menu.href = "#content";
-  l2.appendChild(menu);
-  const contact = document.createElement("a");
+
+  const contact = document.createElement("button");
   contact.textContent = "contact";
-  contact.href = "#content";
-  l3.appendChild(contact);
+
+  nav.appendChild(home);
+  nav.appendChild(menu);
+  nav.appendChild(contact);
   header.appendChild(nav);
+
+  const about = document.createElement("div");
+  about.classList.add("about");
+  about.textContent = "Welcome to Buki Bakes!";
+  container.appendChild(about);
+
+  const head = document.querySelector("head");
+  const fav = document.createElement("link");
+  fav.setAttribute("rel", "shortcut icon");
+  fav.setAttribute("type", "image/png");
+  fav.setAttribute("href", "../assets/imgs/fav.PNG");
+  head.appendChild(fav);
 };
 
 export default render;
