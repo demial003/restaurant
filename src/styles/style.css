@@ -5,7 +5,7 @@
 body {
   background-color: #fffaea;
 }
-.header {
+#header {
   display: flex;
 }
 #content {
@@ -34,7 +34,7 @@ a {
   text-decoration: none;
   color: black;
 }
-.nav {
+#nav {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
@@ -61,4 +61,14 @@ button:hover {
 .about {
   font-size: 50px;
   align-self: center;
+}
+
+.menu {
+  display: flex;
+  align-self: center;
+  height: 1000px;
+  width: 800px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
 }
