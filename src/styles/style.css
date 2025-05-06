@@ -64,11 +64,27 @@ button:hover {
 }
 
 .menu {
-  display: flex;
+  display: grid;
   align-self: center;
-  height: 1000px;
+  grid-template-columns: repeat(3, 266px);
+  grid-template-rows: repeat(3, 300px);
+  justify-items: center;
+  align-items: center;
+  grid-auto-flow: row;
+  height: 900px;
   width: 800px;
   border-radius: 10px;
   border-color: black;
   border-style: solid;
+}
+
+.item {
+  height: 250px;
+  width: 250px;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.pizza {
+  background-color: pink;
 }
