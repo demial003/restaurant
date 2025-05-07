@@ -102,3 +102,29 @@ button:hover {
   border: solid black;
   border-radius: 10px;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-evenly;
+  height: 1000px;
+  width: 1000px;
+  border-radius: 10px;
+  border: solid black;
+}
+
+.contactImg {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  border: solid black;
+}
+
+.contactInfo {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  border: solid black;
+}
