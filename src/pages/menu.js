@@ -9,7 +9,16 @@ const render = () => {
     const item = document.createElement("div");
     item.classList.add("item");
     item.classList.add(name);
+
+    const itemImg = document.createElement("div");
+    itemImg.classList.add("itemImg");
+
+    const description = document.createElement("div");
+    description.classList.add("description");
+
     menu.appendChild(item);
+    item.appendChild(itemImg);
+    item.appendChild(description);
   };
 
   for (let i = 0; i < 9; i++) {
