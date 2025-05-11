@@ -10,9 +10,9 @@ const render = () => {
 
   const head = document.querySelector("head");
   const fav = document.createElement("link");
-  fav.setAttribute("rel", "shortcut icon");
-  fav.setAttribute("type", "image/png");
-  fav.setAttribute("href", "../assets/imgs/fav.PNG");
+  fav.setAttribute("rel", "icon");
+  fav.setAttribute("type", "image/x-icon");
+  fav.setAttribute("href", "../assets/imgs/favicon.ico");
   head.appendChild(fav);
 };
 
